@@ -19,6 +19,7 @@ import {
   unreal,
   zbrush,
 } from '../assets'
+import { FeaturedSkill, Footer } from '../component'
 
 export default function Home() {
   return (
@@ -28,27 +29,27 @@ export default function Home() {
         <h1 className='text-[100px] font-bold my-5 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
           Jinyoung Choi
         </h1>
-        <p className='text-xl text-slate-600 text-center'>
-          Welcome to my portfolio! I specialize in the art of 3D modeling and
+        <p className='text-xl text-slate-600 text-center max-w-7xl'>
+          Welcome to my portfolio! I specialise in the art of 3D modeling and
           scripting. Here you will find a showcase of my polished projects and
           prototypes!
         </p>
-        <div className='flex gap-10 mb-5'>
-          <NavLink
-            to='/projects'
-            className='h-12 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg p-5 flex items-center text-white px-12 font-medium'
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to='/contact'
+        <div className='flex gap-10 mb-10'>
+          <a
+            href='https://jin5497.artstation.com/'
             className='h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg p-5 flex items-center hover:text-white px-12 font-medium border-[1px] border-fuchsia-500'
           >
-            Contact
-          </NavLink>
+            ArtStation
+          </a>
+          <a
+            href='https://github.com/jinyoung5497'
+            className='h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg p-5 flex items-center hover:text-white px-12 font-medium border-[1px] border-blue-500'
+          >
+            Github
+          </a>
         </div>
         <div className='flex flex-col items-center gap-10 w-full mb-10'>
-          <h1 className='font-medium text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
+          <h1 className='font-medium text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text mb-5'>
             Elevating Ideas, Mastering Skills, Inspiring Innovation
           </h1>
           <div className='flex gap-10 items-center justify-center flex-wrap max-w-5xl'>
@@ -79,12 +80,10 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col items-center gap-10 w-full mb-10'>
-          <h1 className='font-medium text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
-            Spotlight on Excellence: Diving into Featured Projects
-          </h1>
-          <div>hi</div>
+          <FeaturedSkill />
         </div>
       </div>
+      <Footer />
     </>
   )
 }

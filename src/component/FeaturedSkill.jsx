@@ -1,0 +1,205 @@
+import React from 'react'
+import {
+  scifi_girl_008,
+  knight_005,
+  general_009,
+  general_017,
+  lost_temple_015,
+  lost_temple_008,
+  harbour_city_006,
+  harbour_city_005,
+  xwave_004,
+  xwave_013,
+} from '../assets'
+
+export default function FeaturedSkill() {
+  return (
+    <>
+      <div className='flex flex-col items-center justify-center mx-40'>
+        <div className='grid grid-cols-2 items-center justify-center gap-20'>
+          {/* concept matching */}
+          <div className='col-span-2 flex flex-col items-center justify-center'>
+            <div className='h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-fuchsia-500  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
+              1
+            </div>
+            <p className='text-3xl font-bold bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
+              Concept matching
+            </p>
+          </div>
+          <div className='flex flex-col gap-10 items-center justify-center'>
+            <img
+              src={xwave_004}
+              alt='xwave_004'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+            <img
+              src={xwave_013}
+              alt='xwave_013'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+          </div>
+          <div className='gap-5 flex flex-col'>
+            <h1 className='text-3xl font-bold'>
+              Matching concept art to 3D Model Creation
+            </h1>
+            <p className='text-slate-600 leading-8'>
+              Concept matching in 3D modeling is an art form in itself, where
+              creators harness their skillsets to meticulously bridge the gap
+              between two-dimensional visions and three-dimensional marvels,
+              resulting in a seamless fusion of artistry and technical prowess.
+            </p>
+          </div>
+          {/* custom textures */}
+          <div className='col-span-2 flex flex-col items-center justify-center'>
+            <div className='h-10 w-10 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
+              2
+            </div>
+            <p className='text-3xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text'>
+              Custom textures
+            </p>
+          </div>
+          <div className='gap-5 flex flex-col text-right'>
+            <h1 className='text-3xl font-bold'>The Art of Custom Textures</h1>
+            <p className='text-slate-600 leading-8'>
+              Custom textures play a pivotal role in evoking emotions and
+              immersing the audience in a virtual world. Whether it's the
+              weathered wood of an ancient structure or the glistening sheen of
+              a futuristic spacecraft, custom textures elevate digital art to a
+              new level of realism and artistic expression. Through the skillful
+              application of textures, artists breathe life into their
+              creations, turning mere digital surfaces into tangible, sensory
+              experiences.
+            </p>
+          </div>
+          <div className='flex flex-col gap-10 items-center justify-center'>
+            <img
+              src={lost_temple_015}
+              alt='lost_temple_015'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+            <img
+              src={harbour_city_006}
+              alt='harbour_city_006'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+          </div>
+          {/* sophisticated pattern */}
+          <div className='col-span-2 flex flex-col items-center justify-center'>
+            <div className='h-10 w-10 rounded-full bg-gradient-to-r from-violet-500 to-pink-500  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
+              3
+            </div>
+            <p className='text-3xl font-bold bg-gradient-to-r from-violet-500 to-pink-500 text-transparent bg-clip-text'>
+              Sophisticated 3D pattern
+            </p>
+          </div>
+          <img
+            src={knight_005}
+            alt='knight_005'
+            className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)]'
+          />
+          <div className='gap-5 flex flex-col'>
+            <h1 className='text-3xl font-bold'>
+              Elevating Aesthetics: Sophisticated 3D Patterns
+            </h1>
+            <p className='text-slate-600 leading-8'>
+              In the realm of 3D modeling, the creation of sophisticated
+              patterns is a meticulous process that requires a blend of
+              technical expertise and creative finesse. These patterns transcend
+              mere repetition, encompassing intricate designs that seamlessly
+              integrate into the 3D model's form, texture, and structure.
+            </p>
+          </div>
+          {/* Clean Topology and UV mapping */}
+          <div className='col-span-2 flex flex-col items-center justify-center'>
+            <div className='h-10 w-10 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
+              4
+            </div>
+            <p className='text-3xl font-bold bg-gradient-to-r from-amber-500 to-yellow-400 text-transparent bg-clip-text'>
+              Clean Topology and UV mapping
+            </p>
+          </div>
+          <div className='gap-5 flex flex-col text-right'>
+            <h1 className='text-3xl font-bold'>
+              The Art of Topology and UV Mapping
+            </h1>
+            <p className='text-slate-600 leading-8'>
+              Precision reigns with clean topology, ensuring smooth animations
+              and efficient rendering. Seamlessly mapped UVs bring textures to
+              life, enhancing realism.
+            </p>
+          </div>
+          <div className='flex flex-col gap-10 items-center justify-center'>
+            <img
+              src={general_009}
+              alt='general_009'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+            <img
+              src={general_017}
+              alt='general_017'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+          </div>
+          {/* Zwrap face skin wrapping */}
+          <div className='col-span-2 flex flex-col items-center justify-center'>
+            <div className='h-10 w-10 rounded-full bg-gradient-to-r from-green-500 to-lime-600  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
+              5
+            </div>
+            <p className='text-3xl font-bold bg-gradient-to-r from-green-500 to-lime-600 text-transparent bg-clip-text'>
+              Zwrap face skin wrapping
+            </p>
+          </div>
+          <img
+            src={scifi_girl_008}
+            alt='scifi_girl_008'
+            className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)]'
+          />
+          <div className='gap-5 flex flex-col'>
+            <h1 className='text-3xl font-bold'>
+              Sculpting Realism: ZWrap Face Skin Wrapping in Zbrush
+            </h1>
+            <p className='text-slate-600 leading-8'>
+              Discover the artistry of ZWrap face skin wrapping, a technique
+              that seamlessly molds digital avatar's skin onto 3D models. This
+              process brings characters to life, capturing intricate facial
+              details and expressions with unparalleled realism.
+            </p>
+          </div>
+          {/* modular workflow */}
+          <div className='col-span-2 flex flex-col items-center justify-center'>
+            <div className='h-10 w-10 rounded-full bg-gradient-to-r from-teal-500 to-cyan-500  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
+              6
+            </div>
+            <p className='text-3xl font-bold bg-gradient-to-r from-teal-500 to-cyan-500 text-transparent bg-clip-text'>
+              Modular workflow
+            </p>
+          </div>
+          <div className='gap-5 flex flex-col text-right'>
+            <h1 className='text-3xl font-bold'>
+              The Power of a Modular Workflow
+            </h1>
+            <p className='text-slate-600 leading-8'>
+              Explore the efficiency and innovation of a modular workflow, where
+              complex projects are deconstructed into manageable modules. This
+              method streamlines development, encourages reusability, and
+              fosters creativity by allowing focused attention on each element
+              while seamlessly integrating them into a cohesive masterpiece.
+            </p>
+          </div>
+          <div className='flex flex-col gap-10 items-center justify-center'>
+            <img
+              src={lost_temple_008}
+              alt='lost_temple_008'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+            <img
+              src={harbour_city_005}
+              alt='harbour_city_005'
+              className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
