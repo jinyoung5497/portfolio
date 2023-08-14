@@ -3,8 +3,8 @@ import {
   grenade_001,
   grenade_002,
   grenade_003,
-  maya,
-  substancepainter,
+  // maya,
+  // substancepainter,
 } from '../assets'
 import { useSelector, useDispatch } from 'react-redux'
 import { hover } from '../slices/pageSlice'
@@ -19,10 +19,10 @@ export default function Grenade() {
         <p className='font-medium text-lg text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
           Tools used
         </p>
-        <div className='flex gap-10 mb-10'>
+        {/* <div className='flex gap-10 mb-10'>
           <img src={maya} alt='maya' className='h-20' />
           <img src={substancepainter} alt='substancepainter' className='h-20' />
-        </div>
+        </div> */}
         <p className='mt-2 text-lg leading-8 text-slate-800 mb-10 max-w-6xl'>
           Optimization is a fundamental process in various fields that aims to
           enhance efficiency, performance, and resource utilization. In the

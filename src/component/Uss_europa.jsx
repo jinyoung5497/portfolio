@@ -9,9 +9,9 @@ import {
   uss_europa_007,
   uss_europa_008,
   uss_europa_009,
-  maya,
-  photoshop,
-  substancepainter,
+  // maya,
+  // photoshop,
+  // substancepainter,
 } from '../assets'
 import { useSelector, useDispatch } from 'react-redux'
 import { hover } from '../slices/pageSlice'
@@ -26,11 +26,11 @@ export default function Uss_europa() {
         <p className='font-medium text-lg text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
           Tools used
         </p>
-        <div className='flex gap-10 mb-10'>
+        {/* <div className='flex gap-10 mb-10'>
           <img src={maya} alt='maya' className='h-20' />
           <img src={substancepainter} alt='substancepainter' className='h-20' />
           <img src={photoshop} alt='photoshop' className='h-20' />
-        </div>
+        </div> */}
         <p className='mt-2 text-lg leading-8 text-slate-800 mb-10 max-w-6xl'>
           Custom textures play a pivotal role in evoking emotions and immersing
           the audience in a virtual world. Whether it's the weathered wood of an

@@ -17,11 +17,11 @@ import {
   general_015,
   general_016,
   general_017,
-  marmoset,
-  marvelous_designer,
-  maya,
-  substancepainter,
-  zbrush,
+  // marmoset,
+  // marvelous_designer,
+  // maya,
+  // substancepainter,
+  // zbrush,
 } from '../assets'
 import moodboard from '../assets/general/general_moodboard.png'
 import { useSelector, useDispatch } from 'react-redux'
@@ -37,7 +37,7 @@ export default function General() {
         <p className='font-medium text-lg text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
           Tools used
         </p>
-        <div className='flex gap-10 mb-10'>
+        {/* <div className='flex gap-10 mb-10'>
           <img src={maya} alt='maya' className='h-20' />
           <img src={zbrush} alt='zbrush' className='h-20' />
           <img src={substancepainter} alt='substancepainter' className='h-20' />
@@ -47,7 +47,7 @@ export default function General() {
             className='h-20'
           />
           <img src={marmoset} alt='marmoset' className='h-20' />
-        </div>
+        </div> */}
         <p className='mt-2 text-lg leading-8 text-slate-800 mb-10 max-w-6xl'>
           I proudly present my latest creation, a meticulously designed 3D
           model, masterfully sculpted using Maya and ZBrush, and brought to life
