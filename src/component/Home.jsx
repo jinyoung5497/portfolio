@@ -24,6 +24,7 @@ import { FeaturedSkill, Footer } from '../component'
  * Animations
  * mobile/tablet
  *
+ * Vercel link
  * Logo main
  * About pdf link
  * Resume pdf
