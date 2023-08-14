@@ -1,14 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { hoverFalse } from '../slices/pageSlice'
+import { hoverFalse, modelling } from '../slices/pageSlice'
 
 export default function Navbar() {
   const dispatch = useDispatch()
   const page = useSelector((state) => state.page.value)
 
-  const hoverFalse = () => {
+  const hoverFalses = () => {
     dispatch(hoverFalse())
+    dispatch(modelling())
     window.scrollTo({ top: 0 })
   }
 
@@ -39,7 +40,7 @@ export default function Navbar() {
           </NavLink>
           <NavLink
             to='/projects'
-            onClick={hoverFalse}
+            onClick={hoverFalses}
             className='hover:text-black text-slate-500'
           >
             Projects
