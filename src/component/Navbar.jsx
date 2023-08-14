@@ -8,8 +8,7 @@ export default function Navbar() {
   const page = useSelector((state) => state.page.value)
 
   const hoverFalses = () => {
-    dispatch(hoverFalse())
-    dispatch(modelling())
+    // dispatch(hoverFalse())
     window.scrollTo({ top: 0 })
   }
 
