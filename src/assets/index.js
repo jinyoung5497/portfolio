@@ -1,6 +1,6 @@
 import csharp from '../assets/csharp.png'
-import github from '../assets/github.png'
 import javascript from '../assets/javascript.png'
+import github from '../assets/github.png'
 import marmoset from '../assets/marmoset_logos.png'
 import marvelous_designer from '../assets/marvelousdesigner.jpg'
 import maya from '../assets/maya.png'
