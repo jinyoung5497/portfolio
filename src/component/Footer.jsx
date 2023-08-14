@@ -8,8 +8,8 @@ export default function Footer() {
   const page = useSelector((state) => state.page.value)
   const [year, setYear] = useState(2023)
 
-  const hoverFalse = () => {
-    dispatch(hoverFalse())
+  const hoverFalses = () => {
+    // dispatch(hoverFalse())
     window.scrollTo({ top: 0 })
   }
 
@@ -51,7 +51,7 @@ export default function Footer() {
             </NavLink>
             <NavLink
               to='/projects'
-              onClick={hoverFalse}
+              onClick={hoverFalses}
               className='hover:text-cyan-500 text-slate-500'
             >
               Projects
