@@ -3,6 +3,6 @@ import pageSlice from './pageSlice'
 
 export const store = configureStore({
   reducer: {
-    pages: pageSlice,
+    page: pageSlice,
   },
 })

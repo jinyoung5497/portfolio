@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Home, About, Contacts, Projects } from './component'
+import { Home, About, Contacts, Projects, Project_detail } from './component'
 
 function App() {
   return (

@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { NavLink } from 'react-router-dom'
 import {
   csharp,
   github,
@@ -20,6 +19,18 @@ import {
   zbrush,
 } from '../assets'
 import { FeaturedSkill, Footer } from '../component'
+
+/**
+ * Animations
+ * mobile/tablet
+ *
+ * Logo main
+ * About pdf link
+ * Resume pdf
+ * Linkedin
+ *
+ * kor version
+ */
 
 export default function Home() {
   return (

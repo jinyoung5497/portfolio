@@ -15,6 +15,7 @@ import unity from '../assets/unity.png'
 import unreal from '../assets/unreal.png'
 import zbrush from '../assets/zbrush.png'
 import pdf from '../assets/pdf.avif'
+import jinyoung from '../assets/jinyoung_choi.jpg'
 import artstation from '../assets/artstation.png'
 import assassin_001 from './assassin/jinyoung_choi_assassin_001.jpg'
 import assassin_002 from './assassin/jinyoung_choi_assassin_002.jpg'
@@ -159,6 +160,10 @@ import xwave_011 from './x_wave/jinyoung_choi_xwave_011.jpg'
 import xwave_012 from './x_wave/jinyoung_choi_xwave_012.jpg'
 import xwave_013 from './x_wave/jinyoung_choi_xwave_013.jpg'
 import xwave_014 from './x_wave/jinyoung_choi_xwave_014.jpg'
+import kanban_001 from './kanban_001.png'
+import connect_001 from './connect_001.png'
+import multi_step_001 from './multi_step_001.png'
+import multi_step_002 from './multi_step_002.png'
 
 export {
   csharp,
@@ -179,6 +184,7 @@ export {
   zbrush,
   artstation,
   pdf,
+  jinyoung,
   assassin_001,
   assassin_002,
   assassin_003,
@@ -322,4 +328,8 @@ export {
   xwave_012,
   xwave_013,
   xwave_014,
+  kanban_001,
+  connect_001,
+  multi_step_001,
+  multi_step_002,
 }

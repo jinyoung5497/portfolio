@@ -2,19 +2,51 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   value: {
-    pvpToggle: false,
+    hover: true,
+    projectIndex: -1,
+    title: '',
+    modelling: true,
+    frontend: false,
   },
 }
 
 export const pageSlice = createSlice({
-  name: 'pages',
+  name: 'page',
   initialState,
   reducers: {
-    pvpToggle: (state) => {
-      state.value.pvpToggle = !state.value.pvpToggle
+    hover: (state) => {
+      state.value.hover = !state.value.hover
+    },
+    hoverTrue: (state) => {
+      state.value.hover = true
+    },
+    hoverFalse: (state) => {
+      state.value.hover = false
+    },
+    projectIndex: (state, action) => {
+      state.value.projectIndex = action.payload
+    },
+    title: (state, action) => {
+      state.value.title = action.payload
+    },
+    modelling: (state) => {
+      state.value.modelling = true
+      state.value.frontend = false
+    },
+    frontend: (state) => {
+      state.value.modelling = false
+      state.value.frontend = true
     },
   },
 })
 
-export const { pvpToggle } = pageSlice.actions
+export const {
+  hover,
+  hoverTrue,
+  hoverFalse,
+  projectIndex,
+  title,
+  modelling,
+  frontend,
+} = pageSlice.actions
 export default pageSlice.reducer

@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   scifi_girl_008,
+  scifi_girl_012,
   knight_005,
   general_009,
   general_017,
@@ -11,8 +12,23 @@ import {
   xwave_004,
   xwave_013,
 } from '../assets'
+import { useSelector, useDispatch } from 'react-redux'
+import { hoverFalse, projectIndex, title } from '../slices/pageSlice'
+import { useNavigate } from 'react-router-dom'
 
 export default function FeaturedSkill() {
+  const dispatch = useDispatch()
+  const page = useSelector((state) => state.page.value)
+  const navigate = useNavigate()
+
+  const openProject = (index, name) => {
+    dispatch(hoverFalse())
+    dispatch(projectIndex(index))
+    dispatch(title(name))
+    window.scrollTo({ top: 0 })
+    navigate('/projects')
+  }
+
   return (
     <>
       <div className='flex flex-col items-center justify-center mx-40'>
@@ -26,7 +42,10 @@ export default function FeaturedSkill() {
               Concept matching
             </p>
           </div>
-          <div className='flex flex-col gap-10 items-center justify-center'>
+          <div
+            className='flex flex-col gap-10 items-center justify-center cursor-pointer'
+            onClick={() => openProject(1, 'X-wave')}
+          >
             <img
               src={xwave_004}
               alt='xwave_004'
@@ -38,8 +57,11 @@ export default function FeaturedSkill() {
               className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
             />
           </div>
-          <div className='gap-5 flex flex-col'>
-            <h1 className='text-3xl font-bold'>
+          <div
+            className='gap-5 flex flex-col cursor-pointer'
+            onClick={() => openProject(1, 'X-wave')}
+          >
+            <h1 className='text-3xl font-bold hover:bg-gradient-to-r hover:from-blue-500 hover:to-fuchsia-500 hover:text-transparent hover:bg-clip-text'>
               Matching concept art to 3D Model Creation
             </h1>
             <p className='text-slate-600 leading-8'>
@@ -58,8 +80,13 @@ export default function FeaturedSkill() {
               Custom textures
             </p>
           </div>
-          <div className='gap-5 flex flex-col text-right'>
-            <h1 className='text-3xl font-bold'>The Art of Custom Textures</h1>
+          <div
+            className='gap-5 flex flex-col text-right cursor-pointer'
+            onClick={() => openProject(4, 'Lost temple')}
+          >
+            <h1 className='text-3xl font-bold hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-transparent hover:bg-clip-text'>
+              The Art of Custom Textures
+            </h1>
             <p className='text-slate-600 leading-8'>
               Custom textures play a pivotal role in evoking emotions and
               immersing the audience in a virtual world. Whether it's the
@@ -71,7 +98,10 @@ export default function FeaturedSkill() {
               experiences.
             </p>
           </div>
-          <div className='flex flex-col gap-10 items-center justify-center'>
+          <div
+            className='flex flex-col gap-10 items-center justify-center cursor-pointer'
+            onClick={() => openProject(4, 'Lost temple')}
+          >
             <img
               src={lost_temple_015}
               alt='lost_temple_015'
@@ -95,10 +125,14 @@ export default function FeaturedSkill() {
           <img
             src={knight_005}
             alt='knight_005'
-            className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)]'
+            className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer'
+            onClick={() => openProject(8, 'Knight')}
           />
-          <div className='gap-5 flex flex-col'>
-            <h1 className='text-3xl font-bold'>
+          <div
+            className='gap-5 flex flex-col cursor-pointer'
+            onClick={() => openProject(8, 'Knight')}
+          >
+            <h1 className='text-3xl font-bold hover:bg-gradient-to-r hover:from-violet-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text'>
               Elevating Aesthetics: Sophisticated 3D Patterns
             </h1>
             <p className='text-slate-600 leading-8'>
@@ -110,7 +144,10 @@ export default function FeaturedSkill() {
             </p>
           </div>
           {/* Clean Topology and UV mapping */}
-          <div className='col-span-2 flex flex-col items-center justify-center'>
+          <div
+            className='col-span-2 flex flex-col items-center justify-center cursor-pointer'
+            onClick={() => openProject(8, 'Knight')}
+          >
             <div className='h-10 w-10 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400  font-semibold flex items-center justify-center text-white  justify-self-center my-10'>
               4
             </div>
@@ -118,8 +155,11 @@ export default function FeaturedSkill() {
               Clean Topology and UV mapping
             </p>
           </div>
-          <div className='gap-5 flex flex-col text-right'>
-            <h1 className='text-3xl font-bold'>
+          <div
+            className='gap-5 flex flex-col text-right cursor-pointer'
+            onClick={() => openProject(0, 'General')}
+          >
+            <h1 className='text-3xl font-bold hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-400 hover:text-transparent hover:bg-clip-text'>
               The Art of Topology and UV Mapping
             </h1>
             <p className='text-slate-600 leading-8'>
@@ -128,16 +168,18 @@ export default function FeaturedSkill() {
               life, enhancing realism.
             </p>
           </div>
-          <div className='flex flex-col gap-10 items-center justify-center'>
+          <div className='flex flex-col gap-10 items-center justify-center cursor-pointer'>
             <img
-              src={general_009}
-              alt='general_009'
+              src={scifi_girl_012}
+              alt='scifi_girl_012'
               className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+              onClick={() => openProject(7, 'Scifi girl')}
             />
             <img
               src={general_017}
               alt='general_017'
               className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-4/5'
+              onClick={() => openProject(0, 'General')}
             />
           </div>
           {/* Zwrap face skin wrapping */}
@@ -152,10 +194,14 @@ export default function FeaturedSkill() {
           <img
             src={scifi_girl_008}
             alt='scifi_girl_008'
-            className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)]'
+            className='rounded-2xl shadow-[0_35px_35px_rgba(0,0,0,0.25)] cursor-pointer'
+            onClick={() => openProject(7, 'Scifi girl')}
           />
-          <div className='gap-5 flex flex-col'>
-            <h1 className='text-3xl font-bold'>
+          <div
+            className='gap-5 flex flex-col cursor-pointer'
+            onClick={() => openProject(7, 'Scifi girl')}
+          >
+            <h1 className='text-3xl font-bold hover:bg-gradient-to-r hover:from-green-500 hover:to-lime-600 hover:text-transparent hover:bg-clip-text'>
               Sculpting Realism: ZWrap Face Skin Wrapping in Zbrush
             </h1>
             <p className='text-slate-600 leading-8'>
@@ -174,8 +220,11 @@ export default function FeaturedSkill() {
               Modular workflow
             </p>
           </div>
-          <div className='gap-5 flex flex-col text-right'>
-            <h1 className='text-3xl font-bold'>
+          <div
+            className='gap-5 flex flex-col text-right cursor-pointer'
+            onClick={() => openProject(4, 'Lost temple')}
+          >
+            <h1 className='text-3xl font-bold hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 hover:text-transparent hover:bg-clip-text'>
               The Power of a Modular Workflow
             </h1>
             <p className='text-slate-600 leading-8'>
@@ -186,7 +235,10 @@ export default function FeaturedSkill() {
               while seamlessly integrating them into a cohesive masterpiece.
             </p>
           </div>
-          <div className='flex flex-col gap-10 items-center justify-center'>
+          <div
+            className='flex flex-col gap-10 items-center justify-center cursor-pointer'
+            onClick={() => openProject(4, 'Lost temple')}
+          >
             <img
               src={lost_temple_008}
               alt='lost_temple_008'
