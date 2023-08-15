@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className='flex items-center justify-between p-5 w-full text-md px-40 border-b-[1px] border-slate-400 mb-10 sticky top-0 bg-white z-10'>
+      <div className='flex items-center justify-between p-5 w-full text-md px-40 xl:px-32 lg:px-20 border-b-[1px] border-slate-400 mb-10 sticky top-0 bg-white z-10 xs:text-sm 2xs:px-10 3xs:text-[10px] 3xs:mb-5 4xs:px-3'>
         <NavLink
           to='/'
           onClick={window.scrollTo({ top: 0 })}
@@ -22,7 +22,7 @@ export default function Navbar() {
         >
           Jinyoung Choi
         </NavLink>
-        <div className='flex gap-x-10'>
+        <div className='flex gap-x-10 xs:gap-x-4 4xs:gap-x-2'>
           <NavLink
             to='/'
             onClick={window.scrollTo({ top: 0 })}

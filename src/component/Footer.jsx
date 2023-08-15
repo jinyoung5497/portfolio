@@ -20,15 +20,15 @@ export default function Footer() {
 
   return (
     <>
-      <div className='bg-black-light w-full h-64 mt-20 flex items-center justify-center place-content-around'>
+      <div className='bg-black-light w-full h-64 mt-20 flex items-center justify-center place-content-around xs:flex-col xs:gap-4'>
         <NavLink
           to='/'
           className='font-bold bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'
         >
           Jinyoung Choi
         </NavLink>
-        <div className='mx-40 lg:text-4xl text-white flex items-center justify-center gap-10 text-lg'>
-          <div className='flex gap-10'>
+        <div className='mx-40 xl:mx-40 lg:mx-20 md:mx-10 md:text-sm sm:mx-5 text-white flex items-center justify-center gap-10  sm:gap-5 text-lg'>
+          <div className='flex gap-10 sm:gap-5'>
             <a
               href='https://jin5497.artstation.com/'
               className='text-slate-500 hover:text-blue-500'
@@ -42,7 +42,7 @@ export default function Footer() {
               Github
             </a>
           </div>
-          <div className='flex gap-10'>
+          <div className='flex gap-10 sm:gap-5'>
             <NavLink
               to='/about'
               className='hover:text-purple-600 text-slate-500'
@@ -64,7 +64,7 @@ export default function Footer() {
             </NavLink>
           </div>
         </div>
-        <div className='flex flex-col gap-3 text-md'>
+        <div className='flex flex-col gap-3 text-md md:text-sm xs:gap-1'>
           <p className='text-slate-500'>© {year} by Jinyoung Choi.</p>
           <p className='text-slate-500'>jinyoung5497@gmail.com</p>
         </div>

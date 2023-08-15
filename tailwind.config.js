@@ -9,13 +9,34 @@ export default {
       xl: { max: '1279px' },
       // => @media (max-width: 1279px) { ... }
 
-      lg: { max: '1023px' },
+      lg: { max: '1150px' },
       // => @media (max-width: 1023px) { ... } laptop
 
-      md: { max: '767px' },
+      ml: { max: '1050px' },
       // => @media (max-width: 767px) { ... } tablet
 
-      sm: { max: '639px' },
+      md: { max: '950px' },
+      // => @media (max-width: 767px) { ... } tablet
+
+      m: { max: '850px' },
+      // => @media (max-width: 767px) { ... } tablet
+
+      sm: { max: '750px' },
+      // => @media (max-width: 639px) { ... } mobile
+
+      xs: { max: '650px' },
+      // => @media (max-width: 639px) { ... } mobile
+
+      '2xs': { max: '550px' },
+      // => @media (max-width: 639px) { ... } mobile
+
+      '3xs': { max: '450px' },
+      // => @media (max-width: 639px) { ... } mobile
+
+      '4xs': { max: '400px' },
+      // => @media (max-width: 639px) { ... } mobile
+
+      '5xs': { max: '350px' },
       // => @media (max-width: 639px) { ... } mobile
     },
     extend: {
