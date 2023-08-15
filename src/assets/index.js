@@ -3,7 +3,7 @@ import csharp from './csharp.png'
 // import github from './github.png'
 import marmoset from './marmoset_logos.png'
 import marvelous_designer from './marvelousdesigner.jpg'
-import maya from './maya.png'
+// import maya from './maya.png'
 import photoshop from './photoshop.png'
 import premierepro from './premierepro.png'
 import react from './react.png'
@@ -171,7 +171,7 @@ export {
   // javascript,
   marmoset,
   marvelous_designer,
-  maya,
+  // maya,
   photoshop,
   premierepro,
   react,

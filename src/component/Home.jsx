@@ -9,7 +9,7 @@ import {
   // javascript,
   marmoset,
   marvelous_designer,
-  maya,
+  // maya,
   photoshop,
   premierepro,
   react,
@@ -87,7 +87,7 @@ export default function Home() {
             Elevating Ideas, Mastering Skills, Inspiring Innovation
           </h1>
           <div className='flex gap-10 items-center justify-center flex-wrap max-w-5xl'>
-            <img src={maya} alt='maya' className='h-20' />
+            {/* <img src={maya} alt='maya' className='h-20' /> */}
             <img src={zbrush} alt='zbrush' className='h-20' />
             <img
               src={substancepainter}
