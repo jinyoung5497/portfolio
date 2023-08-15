@@ -1,6 +1,6 @@
 import csharp from './csharp.png'
 // import javascript from './javascript.png'
-import github from './github.png'
+// import github from './github.png'
 import marmoset from './marmoset_logos.png'
 import marvelous_designer from './marvelousdesigner.jpg'
 import maya from './maya.png'
@@ -167,7 +167,7 @@ import multi_step_002 from './multi_step_002.png'
 
 export {
   csharp,
-  github,
+  // github,
   // javascript,
   marmoset,
   marvelous_designer,

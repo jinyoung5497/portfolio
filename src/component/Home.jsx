@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { hoverTrue, modelling } from '../slices/pageSlice'
 import {
   csharp,
-  github,
+  // github,
   // javascript,
   marmoset,
   marvelous_designer,
@@ -103,7 +103,7 @@ export default function Home() {
             <img src={redux} alt='redux' className='h-20' />
             <img src={csharp} alt='csharp' className='h-20' />
             <img src={tailwind} alt='tailwind' className='h-20' />
-            <img src={github} alt='github' className='h-20' />
+            {/* <img src={github} alt='github' className='h-20' /> */}
             <img
               src={marvelous_designer}
               alt='marvelous_designer'
