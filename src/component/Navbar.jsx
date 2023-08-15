@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { hoverFalse, modelling } from '../slices/pageSlice'
+import { hoverTrue, modelling } from '../slices/pageSlice'
 
 export default function Navbar() {
   const dispatch = useDispatch()
   const page = useSelector((state) => state.page.value)
 
   const hoverFalses = () => {
-    // dispatch(hoverFalse())
+    dispatch(hoverTrue())
     window.scrollTo({ top: 0 })
   }
 

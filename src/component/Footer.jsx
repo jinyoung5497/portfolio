@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { hoverFalse } from '../slices/pageSlice'
+import { hoverTrue } from '../slices/pageSlice'
 
 export default function Footer() {
   const dispatch = useDispatch()
@@ -9,7 +9,7 @@ export default function Footer() {
   const [year, setYear] = useState(2023)
 
   const hoverFalses = () => {
-    // dispatch(hoverFalse())
+    dispatch(hoverTrue())
     window.scrollTo({ top: 0 })
   }
 

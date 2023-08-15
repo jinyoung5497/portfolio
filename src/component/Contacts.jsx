@@ -75,7 +75,7 @@ export default function Contacts() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className='flex flex-col gap-5 w-full'
+          className='flex flex-col gap-5 w-full px-60'
         >
           <input
             type='text'

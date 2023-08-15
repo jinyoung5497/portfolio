@@ -1,5 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { NavLink } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+import { hoverTrue, modelling } from '../slices/pageSlice'
 import // csharp,
 // github,
 // javascript,
@@ -20,20 +23,32 @@ import // csharp,
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- * Animations
+ * project link doesnt toggle hover
+ * project link to home
+ * maybe change project inside fixed paragraph
+ * test image
  * mobile/tablet
- *
- * Vercel link
+ * Animations
+ * IFB398, IFB200, new game
  * Logo main
  * About pdf link
+ *
  * Resume pdf
  * Linkedin
  *
- *
  * kor version
+ *
  */
 
 export default function Home() {
+  const dispatch = useDispatch()
+  const page = useSelector((state) => state.page.value)
+
+  const hoverFalses = () => {
+    dispatch(hoverTrue())
+    window.scrollTo({ top: 0 })
+  }
+
   return (
     <>
       <Navbar />
@@ -49,10 +64,17 @@ export default function Home() {
         <div className='flex gap-10 mb-10'>
           <a
             href='https://jin5497.artstation.com/'
-            className='h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg p-5 flex items-center hover:text-white px-12 font-medium border-[1px] border-fuchsia-500'
+            className='h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg p-5 flex items-center hover:text-white px-10 font-medium border-[1px] border-fuchsia-500'
           >
             ArtStation
           </a>
+          <NavLink
+            to='/projects'
+            onClick={hoverFalses}
+            className='h-12 bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-400 hover:to-violet-400 rounded-lg p-5 flex items-center text-white px-12 font-medium border-[1px]'
+          >
+            Projects
+          </NavLink>
           <a
             href='https://github.com/jinyoung5497'
             className='h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg p-5 flex items-center hover:text-white px-12 font-medium border-[1px] border-blue-500'
