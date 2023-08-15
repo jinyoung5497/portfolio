@@ -3,24 +3,6 @@ import Navbar from './Navbar'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { hoverTrue, modelling } from '../slices/pageSlice'
-import {
-  csharp,
-  // github,
-  // javascript,
-  marmoset,
-  marvelous_designer,
-  // maya,
-  photoshop,
-  premierepro,
-  react,
-  redux,
-  substancepainter,
-  tailwind,
-  typescript,
-  unity,
-  unreal,
-  zbrush,
-} from '../assets'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
