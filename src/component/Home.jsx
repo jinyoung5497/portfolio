@@ -5,21 +5,21 @@ import { useSelector, useDispatch } from 'react-redux'
 import { hoverTrue, modelling } from '../slices/pageSlice'
 import {
   csharp,
-  // github,
-  // javascript,
-  // marmoset,
-  // marvelous_designer,
-  // maya,
-  // photoshop,
-  // premierepro,
-  // react,
-  // redux,
-  // substancepainter,
-  // tailwind,
-  // typescript,
-  // unity,
-  // unreal,
-  // zbrush,
+  github,
+  javascript,
+  marmoset,
+  marvelous_designer,
+  maya,
+  photoshop,
+  premierepro,
+  react,
+  redux,
+  substancepainter,
+  tailwind,
+  typescript,
+  unity,
+  unreal,
+  zbrush,
 } from '../assets'
 import { FeaturedSkill, Footer } from '../component'
 
@@ -87,9 +87,7 @@ export default function Home() {
             Elevating Ideas, Mastering Skills, Inspiring Innovation
           </h1>
           <div className='flex gap-10 items-center justify-center flex-wrap max-w-5xl'>
-            <img src={csharp} alt='csharp' className='h-20' />
-
-            {/* <img src={maya} alt='maya' className='h-20' />
+            <img src={maya} alt='maya' className='h-20' />
             <img src={zbrush} alt='zbrush' className='h-20' />
             <img
               src={substancepainter}
@@ -112,7 +110,7 @@ export default function Home() {
               className='h-20'
             />
             <img src={unity} alt='unity' className='h-20' />
-            <img src={unreal} alt='unreal' className='h-20' /> */}
+            <img src={unreal} alt='unreal' className='h-20' />
           </div>
         </div>
         <div className='flex flex-col items-center gap-10 w-full mb-10'>

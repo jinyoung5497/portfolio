@@ -1,20 +1,20 @@
 import csharp from './csharp.png'
-// import javascript from './javascript.png'
-// import github from './github.png'
-// import marmoset from './marmoset_logos.png'
-// import marvelous_designer from './marvelousdesigner.jpg'
-// import maya from './maya.png'
-// import photoshop from './photoshop.png'
-// import premierepro from './premierepro.png'
-// import react from './react.png'
-// import redux from './redux.png'
-// import substancepainter from './substancePainter.png'
-// import tailwind from './tailwind.png'
-// import typescript from './typescriptpng.png'
-// import unity from './unity.png'
-// import unreal from './unreal.png'
-// import zbrush from './zbrush.png'
-// import artstation from './artstation.png'
+import javascript from './javascript.png'
+import github from './github.png'
+import marmoset from './marmoset_logos.png'
+import marvelous_designer from './marvelousdesigner.jpg'
+import maya from './maya.png'
+import photoshop from './photoshop.png'
+import premierepro from './premierepro.png'
+import react from './react.png'
+import redux from './redux.png'
+import substancepainter from './substancePainter.png'
+import tailwind from './tailwind.png'
+import typescript from './typescriptpng.png'
+import unity from './unity.png'
+import unreal from './unreal.png'
+import zbrush from './zbrush.png'
+import artstation from './artstation.png'
 import pdf from './pdf.avif'
 import jinyoung from './jinyoung_choi.jpg'
 import assassin_001 from './assassin/jinyoung_choi_assassin_001.jpg'
@@ -167,22 +167,22 @@ import multi_step_002 from './multi_step_002.png'
 
 export {
   csharp,
-  // github,
-  // javascript,
-  // marmoset,
-  // marvelous_designer,
-  // maya,
-  // photoshop,
-  // premierepro,
-  // react,
-  // redux,
-  // substancepainter,
-  // tailwind,
-  // typescript,
-  // unity,
-  // unreal,
-  // zbrush,
-  // artstation,
+  github,
+  javascript,
+  marmoset,
+  marvelous_designer,
+  maya,
+  photoshop,
+  premierepro,
+  react,
+  redux,
+  substancepainter,
+  tailwind,
+  typescript,
+  unity,
+  unreal,
+  zbrush,
+  artstation,
   pdf,
   jinyoung,
   assassin_001,
