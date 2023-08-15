@@ -23,10 +23,9 @@ import // csharp,
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- * project link doesnt toggle hover
- * project link to home
- * maybe change project inside fixed paragraph
+ *
  * test image
+ * maybe change project inside fixed paragraph
  * mobile/tablet
  * Animations
  * IFB398, IFB200, new game
