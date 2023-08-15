@@ -6,7 +6,7 @@ import { hoverTrue, modelling } from '../slices/pageSlice'
 import {
   csharp,
   github,
-  javascript,
+  // javascript,
   marmoset,
   marvelous_designer,
   maya,
@@ -97,7 +97,7 @@ export default function Home() {
             <img src={marmoset} alt='marmoset' className='h-20' />
             <img src={photoshop} alt='photoshop' className='h-20' />
             <img src={premierepro} alt='premierepro' className='h-20' />
-            <img src={javascript} alt='javascript' className='h-20' />
+            {/* <img src={javascript} alt='javascript' className='h-20' /> */}
             <img src={typescript} alt='typescript' className='h-20' />
             <img src={react} alt='react' className='h-20' />
             <img src={redux} alt='redux' className='h-20' />
