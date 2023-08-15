@@ -27,7 +27,7 @@ export default function Footer() {
         >
           Jinyoung Choi
         </NavLink>
-        <div className='mx-40 text-white flex items-center justify-center gap-10 text-lg'>
+        <div className='mx-40 lg:text-4xl text-white flex items-center justify-center gap-10 text-lg'>
           <div className='flex gap-10'>
             <a
               href='https://jin5497.artstation.com/'

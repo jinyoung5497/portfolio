@@ -20,14 +20,8 @@ import {
   assassin_018,
   assassin_019,
   assassin_020,
-  // marmoset,
-  // marvelous_designer,
-  // maya,
-  // substancepainter,
-  // zbrush,
 } from '../assets'
 import { useSelector, useDispatch } from 'react-redux'
-import { hover } from '../slices/pageSlice'
 
 export default function Assassin() {
   const dispatch = useDispatch()
@@ -36,20 +30,23 @@ export default function Assassin() {
   return (
     <>
       <div className='flex flex-col gap-10 items-center justify-center'>
-        <p className='font-medium text-lg text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
-          Tools used
-        </p>
-        {/* <div className='flex gap-10 mb-10'>
-          <img src={maya} alt='maya' className='h-20' />
-          <img src={zbrush} alt='zbrush' className='h-20' />
-          <img src={substancepainter} alt='substancepainter' className='h-20' />
-          <img
-            src={marvelous_designer}
-            alt='marvelous_designer'
-            className='h-20'
-          />
-          <img src={marmoset} alt='marmoset' className='h-20' />
-        </div> */}
+        <div className='flex gap-10 my-10'>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Maya
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Zbrush
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Substance Painter
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Marvelous Designer
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Marmoset Toolbag 4
+          </p>
+        </div>
         <img
           src={assassin_001}
           alt='assassin_001'

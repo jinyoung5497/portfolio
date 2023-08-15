@@ -20,14 +20,8 @@ import {
   lost_temple_018,
   lost_temple_019,
   lost_temple_020,
-  // marvelous_designer,
-  // maya,
-  // photoshop,
-  // substancepainter,
-  // unreal,
 } from '../assets'
 import { useSelector, useDispatch } from 'react-redux'
-import { hover } from '../slices/pageSlice'
 
 export default function Lost_temple() {
   const dispatch = useDispatch()
@@ -36,20 +30,23 @@ export default function Lost_temple() {
   return (
     <>
       <div className='flex flex-col gap-10 items-center justify-center'>
-        <p className='font-medium text-lg text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text'>
-          Tools used
-        </p>
-        {/* <div className='flex gap-10 mb-10'>
-          <img src={maya} alt='maya' className='h-20' />
-          <img src={substancepainter} alt='substancepainter' className='h-20' />
-          <img src={photoshop} alt='photoshop' className='h-20' />
-          <img
-            src={marvelous_designer}
-            alt='marvelous_designer'
-            className='h-20'
-          />
-          <img src={unreal} alt='unreal' className='h-20' />
-        </div> */}
+        <div className='flex gap-10 my-10'>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Maya
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Zbrush
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Substance Painter
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Marvelous Designer
+          </p>
+          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+            Unreal
+          </p>
+        </div>
         <p className='mt-2 text-lg leading-8 text-slate-800 mb-10 max-w-6xl'>
           Custom textures play a pivotal role in evoking emotions and immersing
           the audience in a virtual world. Whether it's the weathered wood of an

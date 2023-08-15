@@ -34,12 +34,14 @@ export default function Project_detail() {
         <h1 className='text-[100px] font-bold bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text mb-10'>
           {page.title}
         </h1>
-        <p className='text-xl text-slate-600 text-center max-w-7xl mb-10'>
-          Explore the intersection of design, functionality, and imagination as
-          you navigate through this showcase of my work. Each project stands as
-          a polished gem, reflecting the commitment to excellence and the
-          relentless pursuit of pushing boundaries.
-        </p>
+        {page.hover && (
+          <p className='text-xl text-slate-600 text-center max-w-7xl mb-10'>
+            Explore the intersection of design, functionality, and imagination
+            as you navigate through this showcase of my work. Each project
+            stands as a polished gem, reflecting the commitment to excellence
+            and the relentless pursuit of pushing boundaries.
+          </p>
+        )}
         <div className='flex gap-10 mb-10'>
           {page.modelling ? (
             <a

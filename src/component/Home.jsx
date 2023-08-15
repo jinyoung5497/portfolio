@@ -2,16 +2,14 @@ import React from 'react'
 import Navbar from './Navbar'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { hoverTrue, modelling } from '../slices/pageSlice'
+import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- *
- * test image
- * maybe change project inside fixed paragraph
  * mobile/tablet
  * Animations
  * IFB398, IFB200, new game
+ * Home recent work 3 of them
  * Logo main
  * About pdf link
  *
