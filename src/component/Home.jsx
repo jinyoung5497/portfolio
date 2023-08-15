@@ -6,7 +6,7 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- * mobile/tablet
+ * 2xs:text-md project description
  * Animations
  * IFB398, IFB200, new game
  * Home recent work 3 of them

@@ -27,27 +27,27 @@ export default function General() {
 
   return (
     <>
-      <div className='flex flex-col gap-10 items-center justify-center'>
-        <div className='flex gap-10 my-10 max-w-6xl'>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+      <div className='flex flex-col gap-10 items-center justify-center 3xs:gap-5'>
+        <div className='flex gap-10 my-10 max-w-6xl flex-wrap items-center justify-center 3xs:gap-5'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Maya
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Zbrush
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Substance Painter
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Marvelous Designer
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Marmoset Toolbag 4
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Z wrap
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Fibershop
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function General() {
           artwork.
         </p>
 
-        <div className='grid grid-cols-2 gap-10'>
+        <div className='grid grid-cols-2 gap-10 2xs:gap-3 3xs:flex 3xs:flex-col'>
           <div className='flex flex-col items-center justify-center'>
             <img
               src={general_001}

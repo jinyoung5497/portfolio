@@ -29,24 +29,24 @@ export default function Knight() {
 
   return (
     <>
-      <div className='flex flex-col gap-10 items-center justify-center'>
-        <div className='flex gap-10 my-10'>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+      <div className='flex flex-col gap-10 items-center justify-center 3xs:gap-5'>
+        <div className='flex gap-10 my-10 3xs:gap-5 flex-wrap items-center justify-center'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Maya
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Zbrush
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Substance Painter
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Marvelous Designer
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Marmoset Toolbag 4
           </p>
-          <p className='text-[20px] text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
+          <p className='text-[20px] 3xs:text-md text-slate-600 bg-gradient-to-r from-blue-500 to-fuchsia-500 text-transparent bg-clip-text font-medium'>
             Fibershop
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function Knight() {
           encompassing intricate designs that seamlessly integrate into the 3D
           model's form, texture, and structure.
         </p>
-        <div className='grid grid-cols-2 gap-10'>
+        <div className='grid grid-cols-2 gap-10 lg:flex lg:flex-col lg:gap-5'>
           <img
             src={knight_001}
             alt='knight_001'
