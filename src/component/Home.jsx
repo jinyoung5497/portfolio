@@ -6,17 +6,16 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- * 2xs:text-md project description
- * Animations
- * IFB398, IFB200, new game
- * Home recent work 3 of them
- * Logo main
- * About pdf link
- *
  * Resume pdf
+ * About pdf link
  * Linkedin
  *
+ * Home recent work 3 of them
+ * IFB398, IFB200, new game
+ * Animations
+ *
  * kor version
+ *
  *
  */
 
@@ -51,13 +50,13 @@ export default function Home() {
           <NavLink
             to='/projects'
             onClick={hoverFalses}
-            className='h-12 bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-400 hover:to-violet-400 rounded-lg p-5 flex justify-center items-center text-white px-12 font-medium border-[1px] xs:px-4 w-40 xs:w-32 3xs:w-24 3xs:p-4 3xs:px-10 4xs:w-20  xs:text-sm xs:h-3 self-center'
+            className='h-12 bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 rounded-lg p-5 flex justify-center items-center text-white px-12 font-medium border-[1px] xs:px-4 w-40 xs:w-32 3xs:w-24 3xs:p-4 3xs:px-10 4xs:w-20  xs:text-sm xs:h-3 self-center'
           >
             Projects
           </NavLink>
           <a
             href='https://github.com/jinyoung5497'
-            className='h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg p-5 flex justify-center items-center hover:text-white px-12 font-medium border-[1px] border-blue-500 xs:px-4 w-40 xs:w-32 3xs:w-24 3xs:p-4 3xs:px-10 4xs:w-20  xs:text-sm xs:h-3 self-center'
+            className='h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-cyan-500 rounded-lg p-5 flex justify-center items-center hover:text-white px-12 font-medium border-[1px] border-violet-500 xs:px-4 w-40 xs:w-32 3xs:w-24 3xs:p-4 3xs:px-10 4xs:w-20  xs:text-sm xs:h-3 self-center'
           >
             Github
           </a>

@@ -60,13 +60,20 @@ export default function Projects() {
             </p>
             <div className='flex gap-10 mb-10 2xs:gap-5'>
               <button
-                className='h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-fuchsia-500 xs:px-5 xs:h-5 xs:p-5 xs:text-md w-44 justify-center 2xs:w-32 2xs:p-0 2xs:py-4 4xs:w-28'
+                className={
+                  page.modelling
+                    ? `bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white h-12  rounded-lg flex items-center   font-medium border-[1px] border-fuchsia-500 xs:px-5 xs:h-5 xs:p-5 xs:text-md w-44 justify-center 2xs:w-32 2xs:p-0 2xs:py-4 4xs:w-28`
+                    : `h-12  rounded-lg flex items-center hover:bg-gradient-to-r hover:from-violet-600 hover:to-fuchsia-600 hover:text-white font-medium border-[1px] border-fuchsia-500 xs:px-5 xs:h-5 xs:p-5 xs:text-md w-44 justify-center 2xs:w-32 2xs:p-0 2xs:py-4 4xs:w-28`
+                }
                 onClick={setModelling}
               >
                 3D Modelling
               </button>
               <button
-                className='h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-blue-500 xs:px-5 xs:h-5 xs:p-5 xs:text-md w-44 justify-center 2xs:w-32 2xs:p-0 2xs:py-4 4xs:w-28'
+                className={`${
+                  page.frontend &&
+                  'bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white'
+                } h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white rounded-lg flex items-center   font-medium border-[1px] border-blue-500 xs:px-5 xs:h-5 xs:p-5 xs:text-md w-44 justify-center 2xs:w-32 2xs:p-0 2xs:py-4 4xs:w-28`}
                 onClick={setFrontend}
               >
                 Frontend
