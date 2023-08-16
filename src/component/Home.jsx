@@ -6,6 +6,7 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
+ * Domain
  * Resume pdf link
  * Linkedin
  *
