@@ -29,7 +29,7 @@ export default function About() {
         <a
           onClick={() =>
             window.open(
-              'https://drive.google.com/file/d/1B4Rhohc9LWS_2Mf6PbmopzJqA4iXQ-UP/view?usp=sharing'
+              'https://drive.google.com/file/d/1axX2uGPj6CBzHvkGkWGe3OCmIKu9inES/view?usp=sharing'
             )
           }
         >

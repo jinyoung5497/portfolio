@@ -6,8 +6,7 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- * Resume pdf
- * About pdf link
+ * Resume pdf link
  * Linkedin
  *
  * Home recent work 3 of them
