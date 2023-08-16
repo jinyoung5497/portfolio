@@ -26,7 +26,13 @@ export default function About() {
         <p className='text-lg text-slate-800 2xs:text-md 3xs:text-sm'>
           Attached is a copy of my complete resume.
         </p>
-        <a onClick={() => window.open('../assets/resume.pdf')}>
+        <a
+          onClick={() =>
+            window.open(
+              'https://drive.google.com/file/d/1B4Rhohc9LWS_2Mf6PbmopzJqA4iXQ-UP/view?usp=sharing'
+            )
+          }
+        >
           <img src={pdf} alt='pdf' className='h-40 2xs:h-28' />
         </a>
       </div>
