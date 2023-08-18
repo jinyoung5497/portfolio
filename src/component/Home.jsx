@@ -6,16 +6,10 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '../component'
 
 /**
- * Domain
- * Resume pdf link
- * Linkedin
- *
  * Home recent work 3 of them
  * IFB398, IFB200, new game
- * Animations
- *
+ * Animations, Game prototypes
  * kor version
- *
  *
  */
 

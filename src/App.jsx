@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Home, About, Contacts, Projects, Project_detail } from './component'
+import { Home, About, Contacts, Projects, NotFound } from './component'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='projects' element={<Projects />} />
           <Route path='contact' element={<Contacts />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </>

@@ -20,6 +20,7 @@ import Grenade from './Grenade'
 import Kanban from './Kanban'
 import Connect_four from './Connect_four'
 import Multi_step from './Multi_step'
+import NotFound from './NotFound'
 
 export {
   Home,
@@ -44,4 +45,5 @@ export {
   Kanban,
   Connect_four,
   Multi_step,
+  NotFound,
 }
